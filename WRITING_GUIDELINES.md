@@ -77,7 +77,7 @@ Use these consistently:
 | Intent           | Mintlify component | Use for |
 |-----------------|--------------------|--------|
 | Success / done  | `<Check>`          | "Your bounty application was submitted!" |
-| Important / warning | `<Warning>`     | "Applications cost 1 Power Cell. Make sure you have at least one." |
+| Important / warning | `<Warning>`     | "Applications cost 1 Spark. Make sure you have at least one." |
 | Critical / security | `<Warning>`     | "Never share your password or account recovery details. Boundless support will never ask for them." |
 | Pro tip         | `<Tip>`            | "Apply during bounty windows; competition is often lower." |
 | Learn more / concept | `<Info>`       | "New to escrow? Read [How Trustless Escrow Works](/concepts/trustless-escrow-explained)." |
@@ -91,7 +91,7 @@ Example:
 </Check>
 
 <Warning title="Important">
-  You'll spend 1 Power Cell when you apply. Check your balance first.
+  You'll spend 1 Spark when you apply. Check your balance first.
 </Warning>
 
 <Tip title="Pro tip">

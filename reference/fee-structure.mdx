@@ -1,19 +1,93 @@
 ---
 title: "Fee structure"
-description: "Platform fees and costs on Boundless."
+description: "Platform fees and costs on Boundless, including hackathon fee formulas."
 ---
 
 This page summarizes platform fees and costs on Boundless. Exact amounts and rules may vary by product and region; check the in-app flow for current values.
 
 ## Common fee types
 
-- **Creation fees:** Fees for creating bounties, grant programs, hackathons, or campaigns. May be paid in XLM or [Power Cells](/concepts/power-cells).
+- **Creation fees:** Fees for creating bounties, grant programs, hackathons, or campaigns. Bounty creation may be paid in XLM or [Spark](/concepts/power-cells); hackathons, grants, and campaigns use XLM or other means (check in-app).
 - **Transaction fees:** Network (Stellar) fees for moving assets; usually small.
 - **Off-ramp fees:** Fees charged by the off-ramp provider when converting XLM to fiat; see the provider’s terms.
 
-## Power Cells
+## Spark
 
-Some actions consume [Power Cells](/concepts/power-cells) (platform credits). The cost is shown before you confirm the action.
+[Spark](/concepts/power-cells) is used **for bounties only**. Some bounty actions (e.g., applying) consume Spark; the cost is shown before you confirm. Hackathons, grants, and campaigns do not use Spark.
+
+---
+
+## Hackathon (and milestone-based) fee math
+
+Hackathon prizes and other milestone-based payouts use a fee model with a **base rate** plus a **decay term** so that larger milestones have a slightly lower effective fee rate. All amounts below are in **USDC**. The minimum milestone amount for fee calculation is **5 USDC**.
+
+### Constants
+
+| Symbol | Value | Description |
+|--------|--------|-------------|
+| $r_b$ | 0.047 | Business rate (4.7%) |
+| $r_t$ | 0.003 | Trustless Work rate (0.3%) |
+| $P$ | 0.5 | Placeholder (decay scaling) |
+| $k$ | 0.05 | Decay constant |
+| $m_{\min}$ | 5 | Minimum milestone amount (USDC) |
+
+### Fee percentage (effective rate)
+
+The **effective fee percentage** you pay on a milestone of size $m$ (where $m \geq m_{\min}$) is:
+
+$$
+\text{fee}\%(m) = r_b + r_t - \frac{P}{m} \cdot e^{-k \cdot m}
+$$
+
+So:
+
+$$
+\text{fee}\%(m) = 0.05 - \frac{0.5}{m} \cdot e^{-0.05 \, m}
+$$
+
+- For small $m$, the term $\frac{0.5}{m} e^{-0.05 m}$ is larger, so the effective rate is a bit below 5%.
+- As $m$ increases, that term shrinks, so the effective rate approaches 5% from below.
+
+### Total fee (in USDC)
+
+The **total fee** charged on a milestone $m$ is:
+
+$$
+\text{fee}(m) = (r_b + r_t) \cdot m - P \cdot e^{-k \cdot m}
+$$
+
+So:
+
+$$
+\text{fee}(m) = 0.05 \, m - 0.5 \cdot e^{-0.05 \, m}
+$$
+
+### Total amount you pay
+
+The **total amount** (milestone + fee) is:
+
+$$
+\text{total}(m) = m + \text{fee}(m) = m + 0.05 \, m - 0.5 \cdot e^{-0.05 \, m}
+$$
+
+### Split of the fee
+
+- **Trustless Work portion:** $\text{fee}_t(m) = r_t \cdot m = 0.003 \, m$
+- **Business portion (revenue):** $\text{revenue}_b(m) = r_b \cdot m - P \cdot e^{-k \cdot m} = 0.047 \, m - 0.5 \cdot e^{-0.05 \, m}$
+
+### Minimum milestone
+
+Fee calculation applies only when the milestone amount satisfies $m \geq m_{\min} = 5$ USDC. Smaller amounts use different rules or are not allowed for this fee model.
+
+### Example
+
+For a prize or milestone of **100 USDC** ($m = 100$):
+
+- $\text{fee}(100) = 0.05 \times 100 - 0.5 \times e^{-5} \approx 5 - 0.0034 \approx 4.997$ USDC  
+- Effective rate: $\approx 4.997\%$  
+- Total you pay: $100 + 4.997 \approx 104.997$ USDC  
+
+---
 
 ## Where to see current fees
 
@@ -22,5 +96,6 @@ Some actions consume [Power Cells](/concepts/power-cells) (platform credits). Th
 
 ## Related
 
-- [Power Cells](/concepts/power-cells)
+- [Spark](/concepts/power-cells)
 - [Off-ramping](/concepts/off-ramping)
+- [Hackathons overview](/modules/hackathons/overview)
