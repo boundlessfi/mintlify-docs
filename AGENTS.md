@@ -18,6 +18,8 @@
 - Use **Projects** when referring to crowdfunding in the app (URLs: `/projects`, `boundlessfi.xyz/campaigns/{id}`)
 - Bounty types: **fixed price**, **competition**, **milestone-based** (not "single claim" / "application" / "multi-winner" as legacy names)
 - Reputation tiers: **Newcomer**, **Contributor**, **Established**, **Expert**, **Legend** (with score ranges in [reference/reputation-formula](reference/reputation-formula.mdx))
+- **KYC:** [Didit](https://didit.me/). Withdrawing Stellar assets requires KYC.
+- **Escrow:** [Trustless Work](https://www.trustlesswork.com/). **Upcoming:** Bounties, grants, off-ramping. **Live:** Hackathons, crowdfunding (Projects).
 
 ## Style preferences
 

@@ -113,6 +113,9 @@ Example:
 - **Crowdfunding in the app:** Called **Projects**; URLs: `/projects`, `/projects/[slug]`, share link `boundlessfi.xyz/campaigns/{id}`.
 - **Main site:** [www.boundlessfi.xyz](https://www.boundlessfi.xyz). Support: support@boundlessfi.xyz. Discord: https://discord.gg/cNabHsV7PN.
 - **Wallets:** Boundless currently **abstracts wallets** (platform holds user balance; no seed phrase or external wallet). **Passkey** sign-in/signing is **planned for the future**—don't document it as current. Use "account and balance" or "managed wallet" for today.
+- **KYC:** Done via [Didit](https://didit.me/). **Withdrawing Stellar assets** from the platform **requires KYC** (withdraw to external wallet or, when available, off-ramp to fiat).
+- **Escrow:** Powered by [Trustless Work](https://www.trustlesswork.com/) (non-custodial, milestone-based escrow on Stellar).
+- **Upcoming features:** **Bounties**, **grants**, and **off-ramping** (XLM -> fiat) are upcoming. **Live today:** Hackathons, crowdfunding (Projects).
 
 ---
 
