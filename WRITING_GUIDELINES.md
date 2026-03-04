@@ -1,6 +1,6 @@
-# Boundless documentation — writing guidelines
+# Boundless documentation: writing guidelines
 
-This doc is for **participants, organizers, and normal users**—not developers. Keep language clear, confident, and human.
+This doc is for **participants, organizers, and normal users**, not developers. Keep language clear, confident, and human.
 
 ---
 
@@ -20,7 +20,7 @@ This doc is for **participants, organizers, and normal users**—not developers.
 | Concepts          | Educational, patient  | "Escrow might sound complex, but it's actually simple..." |
 | How-To Guides     | Directive, efficient  | "Click **Create Bounty.** Fill in the title and description." |
 | Reference         | Precise, factual     | "Contributor tier: 500–1,999 points. Unlocks more bounties." |
-| Troubleshooting   | Reassuring, helpful   | "Don't worry—this is fixable. Here's what to do..." |
+| Troubleshooting   | Reassuring, helpful   | "Don't worry, this is fixable. Here's what to do..." |
 
 ---
 
@@ -66,7 +66,7 @@ Use this structure on every page:
 - Assume technical knowledge (explain blockchain terms when needed).
 - Write paragraphs longer than 4 lines.
 - Use passive voice when active is clearer ("An admin will review your bounty" not "The bounty will be reviewed").
-- Hide important info in long paragraphs—use callouts.
+- Hide important info in long paragraphs; use callouts.
 
 ---
 
@@ -79,7 +79,7 @@ Use these consistently:
 | Success / done  | `<Check>`          | "Your bounty application was submitted!" |
 | Important / warning | `<Warning>`     | "Applications cost 1 Power Cell. Make sure you have at least one." |
 | Critical / security | `<Warning>`     | "Never share your password or account recovery details. Boundless support will never ask for them." |
-| Pro tip         | `<Tip>`            | "Apply during bounty windows—competition is often lower." |
+| Pro tip         | `<Tip>`            | "Apply during bounty windows; competition is often lower." |
 | Learn more / concept | `<Info>`       | "New to escrow? Read [How Trustless Escrow Works](/concepts/trustless-escrow-explained)." |
 | Note            | `<Note>`           | Supplementary info, safe to skip. |
 
@@ -95,7 +95,7 @@ Example:
 </Warning>
 
 <Tip title="Pro tip">
-  Complete your profile before applying—projects review it.
+  Complete your profile before applying; projects review it.
 </Tip>
 
 <Info title="Learn more">
@@ -112,7 +112,7 @@ Example:
 - **Reputation tiers:** Newcomer (0–499), Contributor (500–1,999), Established (2,000–4,999), Expert (5,000–9,999), Legend (10,000+).
 - **Crowdfunding in the app:** Called **Projects**; URLs: `/projects`, `/projects/[slug]`, share link `boundlessfi.xyz/campaigns/{id}`.
 - **Main site:** [www.boundlessfi.xyz](https://www.boundlessfi.xyz). Support: support@boundlessfi.xyz. Discord: https://discord.gg/cNabHsV7PN.
-- **Wallets:** Boundless currently **abstracts wallets** (platform holds user balance; no seed phrase or external wallet). **Passkey** sign-in/signing is **planned for the future**—don't document it as current. Use "account and balance" or "managed wallet" for today.
+- **Wallets:** Boundless currently **abstracts wallets** (platform holds user balance; no seed phrase or external wallet). **Passkey** sign-in/signing is **planned for the future**; don't document it as current. Use "account and balance" or "managed wallet" for today.
 - **KYC:** Done via [Didit](https://didit.me/). **Withdrawing Stellar assets** from the platform **requires KYC** (withdraw to external wallet or, when available, off-ramp to fiat).
 - **Escrow:** Powered by [Trustless Work](https://www.trustlesswork.com/) (non-custodial, milestone-based escrow on Stellar).
 - **Upcoming features:** **Bounties**, **grants**, and **off-ramping** (XLM -> fiat) are upcoming. **Live today:** Hackathons, crowdfunding (Projects).
@@ -124,3 +124,5 @@ Example:
 - **Internal:** Root-relative, no extension: `/getting-started/quick-start`.
 - **External:** Full URL; they open in a new tab.
 - **App links:** Use production when possible: `https://www.boundlessfi.xyz/projects`, etc.
+- **Platform backlinks:** Include links to the main platform ([Boundless](https://www.boundlessfi.xyz)) in "Need help" sections and where users would go to sign up, browse hackathons, or browse projects. Use `https://www.boundlessfi.xyz`, `https://www.boundlessfi.xyz/hackathons`, `https://www.boundlessfi.xyz/projects` as appropriate.
+- **Punctuation:** Do not use em dashes (—). Use commas, colons, or semicolons instead.

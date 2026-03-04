@@ -149,6 +149,11 @@
     ]
   },
   "footer": {
-    "socials": {}
+    "socials": {
+      "x": "https://x.com/boundless_fi",
+      "linkedin": "https://www.linkedin.com/company/boundlesshq",
+      "github": "https://github.com/boundlessfi",
+      "discord": "https://discord.gg/cNabHsV7PN"
+    }
   }
 }

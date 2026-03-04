@@ -7,7 +7,7 @@
 ## About this project
 
 - This is a documentation site built on [Mintlify](https://mintlify.com) for **docs.boundlessfi.xyz**
-- **Audience:** Participants, organizers, and normal users—not developers
+- **Audience:** Participants, organizers, and normal users, not developers
 - Pages are MDX files with YAML frontmatter
 - Configuration lives in `docs.json`
 - Run `mint dev` to preview locally; run `mint broken-links` to check links
@@ -26,7 +26,7 @@
 {/* Add any project-specific style rules below */}
 
 - Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
+- Keep sentences concise, one idea per sentence
 - Use sentence case for headings
 - Bold for UI elements: Click **Settings**
 - Code formatting for file names, commands, paths, and code references
