@@ -1,68 +1,126 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Boundless Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
+    "primary": "#85d82c",
+    "light": "#A7f950",
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Home",
+            "pages": ["overview"]
+          },
+          {
+            "group": "Getting Started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "getting-started/quick-start",
+              "getting-started/your-first-hackathon",
+              "getting-started/your-first-campaign",
+              "getting-started/your-first-bounty",
+              "getting-started/your-first-grant-application"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Concepts",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "concepts/how-boundless-works",
+              "concepts/trustless-escrow-explained",
+              "concepts/reputation-system",
+              "concepts/power-cells",
+              "concepts/passkey-wallets",
+              "concepts/off-ramping"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Modules",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              {
+                "group": "Bounties",
+                "pages": [
+                  "modules/bounties/overview",
+                  "modules/bounties/four-claiming-models",
+                  "modules/bounties/applying-for-bounties",
+                  "modules/bounties/creating-bounties",
+                  "modules/bounties/lightning-rounds"
+                ]
+              },
+              {
+                "group": "Grants",
+                "pages": [
+                  "modules/grants/overview",
+                  "modules/grants/grant-types",
+                  "modules/grants/application-process",
+                  "modules/grants/milestone-delivery",
+                  "modules/grants/grant-programs"
+                ]
+              },
+              {
+                "group": "Hackathons",
+                "pages": [
+                  "modules/hackathons/overview",
+                  "modules/hackathons/participating",
+                  "modules/hackathons/organizing",
+                  "modules/hackathons/judging-system",
+                  "modules/hackathons/post-event-milestones"
+                ]
+              },
+              {
+                "group": "Crowdfunding",
+                "pages": [
+                  "modules/crowdfunding/overview",
+                  "modules/crowdfunding/creating-campaigns",
+                  "modules/crowdfunding/community-validation",
+                  "modules/crowdfunding/backing-campaigns",
+                  "modules/crowdfunding/milestone-structure"
+                ]
+              }
             ]
           },
           {
-            "group": "AI tools",
+            "group": "How-To Guides",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "how-to-guides/set-up-your-wallet",
+              "how-to-guides/complete-kyc-verification",
+              "how-to-guides/build-your-reputation",
+              "how-to-guides/convert-xlm-to-fiat",
+              "how-to-guides/form-a-hackathon-team",
+              "how-to-guides/structure-grant-milestones",
+              "how-to-guides/handle-disputes"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Reference",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "reference/glossary",
+              "reference/fee-structure",
+              "reference/reputation-formula",
+              "reference/supported-countries",
+              "reference/security-and-privacy"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "faq/general",
+              "faq/bounties",
+              "faq/grants",
+              "faq/hackathons",
+              "faq/crowdfunding"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/contact-us",
+              "support/report-a-bug",
+              "support/community"
             ]
           }
         ]
@@ -72,13 +130,8 @@
       "anchors": [
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "href": "https://docs.boundlessfi.xyz",
           "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
         }
       ]
     }
@@ -91,32 +144,11 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "/support/contact-us"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+    ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
   }
 }
