@@ -21,6 +21,7 @@
             "group": "Getting Started",
             "pages": [
               "getting-started/quick-start",
+              "getting-started/wallet-activation",
               "getting-started/your-first-hackathon",
               "getting-started/your-first-campaign",
               "getting-started/your-first-bounty",
