@@ -11,98 +11,161 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Start Here",
         "groups": [
           {
-            "group": "Home",
-            "pages": ["overview"]
-          },
-          {
-            "group": "Getting Started",
+            "group": "Introduction",
             "pages": [
-              "getting-started/quick-start",
-              "getting-started/wallet-activation",
-              "getting-started/your-first-hackathon",
-              "getting-started/your-first-campaign",
-              "getting-started/your-first-bounty",
-              "getting-started/your-first-grant-application"
+              "start-here/what-is-boundless",
+              "start-here/how-boundless-works",
+              "start-here/choose-your-path"
             ]
           },
           {
-            "group": "Concepts",
+            "group": "Get set up",
             "pages": [
-              "concepts/how-boundless-works",
-              "concepts/trustless-escrow-explained",
-              "concepts/reputation-system",
-              "concepts/power-cells",
-              "concepts/passkey-wallets",
-              "concepts/off-ramping"
+              "start-here/create-your-account",
+              "start-here/onboarding",
+              "start-here/verify-your-identity"
             ]
           },
           {
-            "group": "Modules",
+            "group": "Core concepts",
             "pages": [
-              {
-                "group": "Bounties",
-                "pages": [
-                  "modules/bounties/overview",
-                  "modules/bounties/four-claiming-models",
-                  "modules/bounties/applying-for-bounties",
-                  "modules/bounties/creating-bounties",
-                  "modules/bounties/lightning-rounds"
-                ]
-              },
-              {
-                "group": "Grants",
-                "pages": [
-                  "modules/grants/overview",
-                  "modules/grants/grant-types",
-                  "modules/grants/application-process",
-                  "modules/grants/milestone-delivery",
-                  "modules/grants/grant-programs"
-                ]
-              },
-              {
-                "group": "Hackathons",
-                "pages": [
-                  "modules/hackathons/overview",
-                  "modules/hackathons/participating",
-                  "modules/hackathons/organizing",
-                  "modules/hackathons/judging-system",
-                  "modules/hackathons/post-event-milestones"
-                ]
-              },
-              {
-                "group": "Crowdfunding",
-                "pages": [
-                  "modules/crowdfunding/overview",
-                  "modules/crowdfunding/creating-campaigns",
-                  "modules/crowdfunding/community-validation",
-                  "modules/crowdfunding/backing-campaigns",
-                  "modules/crowdfunding/milestone-structure"
-                ]
-              }
+              "concepts/escrow-and-human-review",
+              "concepts/reputation",
+              "concepts/credits",
+              "concepts/wallet-and-balance"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "For Contributors",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "contributors/ways-to-earn",
+              "contributors/find-opportunities"
             ]
           },
           {
-            "group": "How-To Guides",
+            "group": "Bounties",
             "pages": [
-              "how-to-guides/set-up-your-wallet",
-              "how-to-guides/complete-kyc-verification",
-              "how-to-guides/withdraw-funds",
-              "how-to-guides/build-your-reputation",
-              "how-to-guides/convert-xlm-to-fiat",
-              "how-to-guides/form-a-hackathon-team",
-              "how-to-guides/structure-grant-milestones",
-              "how-to-guides/handle-disputes"
+              "contributors/bounties/overview",
+              "contributors/bounties/bounty-modes",
+              "contributors/bounties/apply",
+              "contributors/bounties/submit-your-work",
+              "contributors/bounties/how-winners-are-paid"
+            ]
+          },
+          {
+            "group": "Hackathons",
+            "pages": [
+              "contributors/hackathons/overview",
+              "contributors/hackathons/join-and-submit",
+              "contributors/hackathons/form-a-team",
+              "contributors/hackathons/tracks-prizes-judging",
+              "contributors/hackathons/post-event-milestones"
+            ]
+          },
+          {
+            "group": "Grants",
+            "pages": [
+              "contributors/grants/overview",
+              "contributors/grants/grant-types",
+              "contributors/grants/apply",
+              "contributors/grants/deliver-milestones"
+            ]
+          },
+          {
+            "group": "Get paid",
+            "pages": [
+              "contributors/get-paid/wallet-and-withdrawals",
+              "contributors/get-paid/credits",
+              "contributors/get-paid/build-your-reputation"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "For Backers",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "backers/overview",
+              "backers/discover-projects"
+            ]
+          },
+          {
+            "group": "Create a campaign",
+            "pages": [
+              "backers/create-a-campaign"
+            ]
+          },
+          {
+            "group": "Back a project",
+            "pages": [
+              "backers/back-a-project",
+              "backers/vote-on-campaigns"
+            ]
+          },
+          {
+            "group": "How your money is protected",
+            "pages": [
+              "backers/milestones-and-releases",
+              "backers/refunds-and-cancellation"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "For Organizers & Judges",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "organizers/overview"
+            ]
+          },
+          {
+            "group": "Run a program",
+            "pages": [
+              "organizers/post-a-bounty",
+              "organizers/host-a-hackathon",
+              "organizers/run-a-grant-program"
+            ]
+          },
+          {
+            "group": "Judging",
+            "pages": [
+              "organizers/how-judging-works",
+              "organizers/score-submissions"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Help & Reference",
+        "groups": [
+          {
+            "group": "Get help",
+            "pages": [
+              "help/troubleshooting",
+              "help/disputes-and-moderation",
+              "help/report-a-bug"
             ]
           },
           {
             "group": "Reference",
             "pages": [
               "reference/glossary",
-              "reference/fee-structure",
+              "reference/fees",
               "reference/reputation-formula",
+              "reference/tokens-and-wallets",
+              "reference/converting-usdc",
               "reference/supported-countries",
               "reference/security-and-privacy"
             ]
@@ -111,17 +174,17 @@
             "group": "FAQ",
             "pages": [
               "faq/general",
+              "faq/payments-and-kyc",
               "faq/bounties",
-              "faq/grants",
               "faq/hackathons",
+              "faq/grants",
               "faq/crowdfunding"
             ]
           },
           {
-            "group": "Support",
+            "group": "Support & community",
             "pages": [
               "support/contact-us",
-              "support/report-a-bug",
               "support/community"
             ]
           }
@@ -138,6 +201,52 @@
       ]
     }
   },
+  "redirects": [
+    { "source": "/overview", "destination": "/start-here/what-is-boundless" },
+    { "source": "/quickstart", "destination": "/start-here/create-your-account" },
+    { "source": "/getting-started/quick-start", "destination": "/start-here/create-your-account" },
+    { "source": "/getting-started/wallet-activation", "destination": "/concepts/wallet-and-balance" },
+    { "source": "/getting-started/your-first-hackathon", "destination": "/contributors/hackathons/overview" },
+    { "source": "/getting-started/your-first-campaign", "destination": "/backers/create-a-campaign" },
+    { "source": "/getting-started/your-first-bounty", "destination": "/contributors/bounties/overview" },
+    { "source": "/getting-started/your-first-grant-application", "destination": "/contributors/grants/apply" },
+    { "source": "/concepts/how-boundless-works", "destination": "/start-here/how-boundless-works" },
+    { "source": "/concepts/trustless-escrow-explained", "destination": "/concepts/escrow-and-human-review" },
+    { "source": "/concepts/reputation-system", "destination": "/concepts/reputation" },
+    { "source": "/concepts/power-cells", "destination": "/concepts/credits" },
+    { "source": "/concepts/passkey-wallets", "destination": "/concepts/wallet-and-balance" },
+    { "source": "/concepts/off-ramping", "destination": "/reference/converting-usdc" },
+    { "source": "/modules/bounties/overview", "destination": "/contributors/bounties/overview" },
+    { "source": "/modules/bounties/four-claiming-models", "destination": "/contributors/bounties/bounty-modes" },
+    { "source": "/modules/bounties/applying-for-bounties", "destination": "/contributors/bounties/apply" },
+    { "source": "/modules/bounties/creating-bounties", "destination": "/organizers/post-a-bounty" },
+    { "source": "/modules/bounties/lightning-rounds", "destination": "/contributors/bounties/overview" },
+    { "source": "/modules/hackathons/overview", "destination": "/contributors/hackathons/overview" },
+    { "source": "/modules/hackathons/participating", "destination": "/contributors/hackathons/join-and-submit" },
+    { "source": "/modules/hackathons/judging-system", "destination": "/contributors/hackathons/tracks-prizes-judging" },
+    { "source": "/modules/hackathons/post-event-milestones", "destination": "/contributors/hackathons/post-event-milestones" },
+    { "source": "/modules/hackathons/organizing", "destination": "/organizers/host-a-hackathon" },
+    { "source": "/modules/grants/overview", "destination": "/contributors/grants/overview" },
+    { "source": "/modules/grants/grant-types", "destination": "/contributors/grants/grant-types" },
+    { "source": "/modules/grants/application-process", "destination": "/contributors/grants/apply" },
+    { "source": "/modules/grants/milestone-delivery", "destination": "/contributors/grants/deliver-milestones" },
+    { "source": "/modules/grants/grant-programs", "destination": "/organizers/run-a-grant-program" },
+    { "source": "/modules/crowdfunding/overview", "destination": "/backers/overview" },
+    { "source": "/modules/crowdfunding/creating-campaigns", "destination": "/backers/create-a-campaign" },
+    { "source": "/modules/crowdfunding/backing-campaigns", "destination": "/backers/back-a-project" },
+    { "source": "/modules/crowdfunding/community-validation", "destination": "/backers/vote-on-campaigns" },
+    { "source": "/modules/crowdfunding/milestone-structure", "destination": "/backers/milestones-and-releases" },
+    { "source": "/how-to-guides/set-up-your-wallet", "destination": "/concepts/wallet-and-balance" },
+    { "source": "/how-to-guides/complete-kyc-verification", "destination": "/start-here/verify-your-identity" },
+    { "source": "/how-to-guides/withdraw-funds", "destination": "/contributors/get-paid/wallet-and-withdrawals" },
+    { "source": "/how-to-guides/build-your-reputation", "destination": "/contributors/get-paid/build-your-reputation" },
+    { "source": "/how-to-guides/convert-xlm-to-fiat", "destination": "/reference/converting-usdc" },
+    { "source": "/how-to-guides/form-a-hackathon-team", "destination": "/contributors/hackathons/form-a-team" },
+    { "source": "/how-to-guides/structure-grant-milestones", "destination": "/contributors/grants/deliver-milestones" },
+    { "source": "/how-to-guides/handle-disputes", "destination": "/help/disputes-and-moderation" },
+    { "source": "/reference/fee-structure", "destination": "/reference/fees" },
+    { "source": "/support/report-a-bug", "destination": "/help/report-a-bug" }
+  ],
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"

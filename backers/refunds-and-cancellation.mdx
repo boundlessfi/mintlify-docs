@@ -1,0 +1,41 @@
+---
+title: "Refunds and cancellation"
+description: "What happens to your contribution if a crowdfunding project is cancelled or paused."
+---
+
+> **TL;DR:** If a project is cancelled, the funds still held in escrow are refunded on-chain. Partner contributions are refunded first, then the remaining balance is returned proportionally. The rules are enforced by the escrow contract, not by manual review.
+
+## What you'll learn
+
+- When refunds happen
+- How the refund amount is worked out
+- What pausing a project means for your contribution
+
+---
+
+## When refunds happen
+
+Your contribution goes into [on-chain escrow](/concepts/escrow-and-human-review) and is released to the creator milestone by milestone as work is approved. If a project is cancelled before all milestones are delivered, whatever is **still in escrow** is refunded. Funds already released for approved milestones are not clawed back.
+
+## How refunds are calculated
+
+Refunds follow a fixed priority that the contract enforces:
+
+1. **Partner contributions** are refunded first.
+2. The **remaining balance** is returned proportionally (pro rata) to backers, based on what's left in escrow.
+
+<Frame caption="On cancellation, partner contributions are refunded first, then the remaining balance is returned pro rata to backers.">
+  <img src="/images/diagrams/refund-priority.svg" alt="Refund priority: partner contributions first, then pro-rata backer residual" />
+</Frame>
+
+Because this runs on-chain, there's no manual reconciliation and no one deciding case by case, the same rules apply to every project.
+
+## If a project is paused
+
+An admin can pause a live project while looking into a concern. While it's paused, contributions and milestone releases are blocked, but the escrow balance is untouched. The project can then be unpaused or cancelled. If it's cancelled, the refund rules above apply.
+
+## Next steps
+
+- [Milestones and releases](/backers/milestones-and-releases)
+- [Escrow and human review](/concepts/escrow-and-human-review)
+- [Handle disputes](/help/disputes-and-moderation)
