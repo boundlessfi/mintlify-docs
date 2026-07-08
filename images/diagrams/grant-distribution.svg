@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" font-family="ui-sans-serif,system-ui,sans-serif" role="img" aria-label="Grant budget split across winning positions, each paid per milestone">
-  <text x="300" y="26" fill="#64748b" font-size="13" font-weight="600" text-anchor="middle">Budget split across positions (adds up to 100%), each paid per milestone</text>
+  <text x="300" y="26" fill="#5c6f6b" font-size="13" font-weight="600" text-anchor="middle">Budget split across positions (adds up to 100%), each paid per milestone</text>
   <g>
-    <rect x="60"  y="50" width="150" height="150" rx="12" fill="#15803D"/>
-    <rect x="225" y="80" width="150" height="120" rx="12" fill="#2f9e54"/>
-    <rect x="390" y="110" width="150" height="90" rx="12" fill="#85d82c"/>
+    <rect x="60"  y="50" width="150" height="150" rx="12" fill="#19825e"/>
+    <rect x="225" y="80" width="150" height="120" rx="12" fill="#21a879"/>
+    <rect x="390" y="110" width="150" height="90" rx="12" fill="#2eedaa"/>
   </g>
   <g text-anchor="middle">
     <text x="135" y="130" fill="#fff" font-size="15" font-weight="700">Position 1</text>
-    <text x="135" y="152" fill="#dcfce7" font-size="16" font-weight="700">50%</text>
+    <text x="135" y="152" fill="#bef9e5" font-size="16" font-weight="700">50%</text>
     <text x="300" y="140" fill="#fff" font-size="15" font-weight="700">Position 2</text>
-    <text x="300" y="162" fill="#dcfce7" font-size="16" font-weight="700">30%</text>
-    <text x="465" y="150" fill="#14320a" font-size="15" font-weight="700">Position 3</text>
-    <text x="465" y="172" fill="#14320a" font-size="16" font-weight="700">20%</text>
+    <text x="300" y="162" fill="#bef9e5" font-size="16" font-weight="700">30%</text>
+    <text x="465" y="150" fill="#08352a" font-size="15" font-weight="700">Position 3</text>
+    <text x="465" y="172" fill="#08352a" font-size="16" font-weight="700">20%</text>
   </g>
-  <text x="300" y="226" fill="#64748b" font-size="11" text-anchor="middle">Each position's share is fixed at publish and released one milestone at a time</text>
+  <text x="300" y="226" fill="#5c6f6b" font-size="11" text-anchor="middle">Each position's share is fixed at publish and released one milestone at a time</text>
 </svg>

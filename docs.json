@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Boundless Documentation",
   "colors": {
-    "primary": "#85d82c",
-    "light": "#A7f950",
-    "dark": "#15803D"
+    "primary": "#2eedaa",
+    "light": "#58f1bb",
+    "dark": "#19825e"
   },
   "favicon": "/favicon.svg",
   "navigation": {

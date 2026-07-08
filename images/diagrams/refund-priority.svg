@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" font-family="ui-sans-serif,system-ui,sans-serif" role="img" aria-label="On cancellation, partner contributions are refunded first, then remaining funds pro rata to backers">
-  <defs><marker id="f" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#94a3b8"/></marker></defs>
-  <rect x="30" y="65" width="180" height="70" rx="12" fill="#334155"/>
+  <defs><marker id="f" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#7a8f8b"/></marker></defs>
+  <rect x="30" y="65" width="180" height="70" rx="12" fill="#2c3a37"/>
   <text x="120" y="95" fill="#fff" font-size="14" font-weight="700" text-anchor="middle">Funds still</text>
   <text x="120" y="115" fill="#fff" font-size="14" font-weight="700" text-anchor="middle">in escrow</text>
-  <rect x="280" y="30" width="200" height="52" rx="11" fill="#15803D"/>
+  <rect x="280" y="30" width="200" height="52" rx="11" fill="#19825e"/>
   <text x="380" y="52" fill="#fff" font-size="13" font-weight="700" text-anchor="middle">1. Partner contributions</text>
-  <text x="380" y="70" fill="#dcfce7" font-size="11" text-anchor="middle">refunded first</text>
-  <rect x="280" y="112" width="200" height="52" rx="11" fill="#85d82c"/>
-  <text x="380" y="134" fill="#14320a" font-size="13" font-weight="700" text-anchor="middle">2. Backers (pro rata)</text>
-  <text x="380" y="152" fill="#14320a" font-size="11" text-anchor="middle">the remainder</text>
-  <line x1="212" y1="90" x2="276" y2="60"  stroke="#94a3b8" stroke-width="2" marker-end="url(#f)"/>
-  <line x1="212" y1="110" x2="276" y2="138" stroke="#94a3b8" stroke-width="2" marker-end="url(#f)"/>
+  <text x="380" y="70" fill="#bef9e5" font-size="11" text-anchor="middle">refunded first</text>
+  <rect x="280" y="112" width="200" height="52" rx="11" fill="#2eedaa"/>
+  <text x="380" y="134" fill="#08352a" font-size="13" font-weight="700" text-anchor="middle">2. Backers (pro rata)</text>
+  <text x="380" y="152" fill="#08352a" font-size="11" text-anchor="middle">the remainder</text>
+  <line x1="212" y1="90" x2="276" y2="60"  stroke="#7a8f8b" stroke-width="2" marker-end="url(#f)"/>
+  <line x1="212" y1="110" x2="276" y2="138" stroke="#7a8f8b" stroke-width="2" marker-end="url(#f)"/>
 </svg>
