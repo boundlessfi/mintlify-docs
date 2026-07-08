@@ -1,0 +1,39 @@
+---
+title: "Tokens and wallets"
+description: "USDC, Stellar addresses, trustlines, and the difference between a Boundless wallet and an external wallet."
+---
+
+> **TL;DR:** Boundless pays in USDC on the Stellar network. You can use the built-in Boundless wallet, which is managed for you, or connect your own external wallet.
+
+## USDC
+
+All payments on Boundless, funding, rewards, and payouts, settle in **USDC**, a US-dollar stablecoin on the Stellar network. Your balance is shown in USD. To turn USDC into local currency, see [Converting USDC to local currency](/reference/converting-usdc).
+
+## Boundless wallet vs external wallet
+
+- **Boundless wallet**: managed for you. You sign in and the platform signs transactions on your action. There's no seed phrase to look after. This is the simplest option and the default for most people.
+- **External wallet**: a self-custody wallet such as Freighter, where you hold the keys and sign transactions yourself. Useful if you're already crypto-native and want to control your own funds.
+
+Both types have a Stellar address and can send and receive USDC.
+
+## Stellar terms you may see
+
+| Term | What it means |
+| --- | --- |
+| **G-address** | A Stellar wallet address, 56 characters, starting with `G`. |
+| **Trustline** | Permission for your Stellar account to hold a specific token, such as USDC. You need one to receive USDC. |
+| **Soroban** | Stellar's smart-contract layer. Boundless's escrow runs on Soroban contracts. |
+
+<Frame caption="A Boundless wallet is managed for you; an external wallet is self-custody. Both use a G-address and a USDC trustline.">
+  <img src="/images/diagrams/wallets.svg" alt="Boundless managed wallet versus external self-custody wallet" />
+</Frame>
+
+## Escrow contracts
+
+Boundless runs escrow on its own Soroban smart contracts on Stellar, so program funds are held and released by code rather than by a custodian. See [Escrow and human review](/concepts/escrow-and-human-review).
+
+## Next steps
+
+- [Your wallet and balance](/concepts/wallet-and-balance)
+- [Converting USDC to local currency](/reference/converting-usdc)
+- [Verify your identity](/start-here/verify-your-identity)

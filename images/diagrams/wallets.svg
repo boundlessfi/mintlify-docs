@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 200" font-family="ui-sans-serif,system-ui,sans-serif" role="img" aria-label="Boundless wallet is managed for you; an external wallet is self-custody; both receive USDC via a trustline">
+  <rect x="40" y="45" width="250" height="110" rx="14" fill="#15803D"/>
+  <text x="165" y="75" fill="#fff" font-size="15" font-weight="700" text-anchor="middle">Boundless wallet</text>
+  <text x="165" y="98" fill="#dcfce7" font-size="11.5" text-anchor="middle">managed for you</text>
+  <text x="165" y="116" fill="#dcfce7" font-size="11.5" text-anchor="middle">sign in, platform signs</text>
+  <text x="165" y="134" fill="#dcfce7" font-size="11.5" text-anchor="middle">no seed phrase</text>
+  <rect x="410" y="45" width="250" height="110" rx="14" fill="#334155"/>
+  <text x="535" y="75" fill="#fff" font-size="15" font-weight="700" text-anchor="middle">External wallet</text>
+  <text x="535" y="98" fill="#cbd5e1" font-size="11.5" text-anchor="middle">self-custody (e.g. Freighter)</text>
+  <text x="535" y="116" fill="#cbd5e1" font-size="11.5" text-anchor="middle">you sign transactions</text>
+  <text x="535" y="134" fill="#cbd5e1" font-size="11.5" text-anchor="middle">you hold the keys</text>
+  <text x="350" y="180" fill="#64748b" font-size="11.5" text-anchor="middle">Both have a G-address and need a USDC trustline to receive USDC</text>
+</svg>

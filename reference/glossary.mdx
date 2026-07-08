@@ -1,61 +1,70 @@
 ---
 title: "Glossary"
-description: "Definitions of key terms used in Boundless documentation."
+description: "Definitions of key terms used across Boundless."
 ---
 
 <AccordionGroup>
   <Accordion title="Backer">
-    A user who contributes funds to a crowdfunding campaign.
+    Someone who contributes funds to a crowdfunding project.
   </Accordion>
   <Accordion title="Bounty">
-    A task with a reward, held in escrow until a claimer completes the work and is selected.
+    A paid task. The reward is held in escrow until a contributor is selected and their work is approved.
   </Accordion>
-  <Accordion title="Claiming model">
-    The rule set for how a bounty reward is assigned (e.g., first to complete, best submission).
+  <Accordion title="Campaign / Project">
+    A crowdfunding effort with a funding goal and milestones. Listed as a "project" on the platform.
   </Accordion>
-  <Accordion title="Campaign">
-    A crowdfunding initiative with a goal and optional milestones.
+  <Accordion title="Credits">
+    The platform currency used only for bounties, spent to apply to and submit to bounties. See [Credits](/concepts/credits).
+  </Accordion>
+  <Accordion title="Delegated Reviewer">
+    A trusted community member assigned to a crowdfunding project who validates each milestone before funds are released.
   </Accordion>
   <Accordion title="Didit">
-    The identity platform Boundless uses for KYC (identity verification). See [didit.me](https://didit.me/). Withdrawing Stellar assets from Boundless requires completing KYC via Didit.
+    The identity platform Boundless uses for KYC (identity verification). See [didit.me](https://didit.me/). Withdrawing funds requires completing KYC via Didit.
   </Accordion>
   <Accordion title="Escrow">
-    Funds locked until conditions are met. Boundless uses [Trustless Work](https://www.trustlesswork.com/) for escrow infrastructure on Stellar: trustless, non-custodial, milestone-based.
+    Funds locked on-chain until conditions are met. Boundless runs escrow on its own Soroban smart contracts on Stellar. See [Escrow and human review](/concepts/escrow-and-human-review).
+  </Accordion>
+  <Accordion title="G-address">
+    A Stellar wallet address, 56 characters, starting with `G`.
   </Accordion>
   <Accordion title="Grant">
-    Application-based funding with optional milestone-based payouts.
+    Application-based funding that pays out milestone by milestone.
   </Accordion>
-  <Accordion title="Grant program">
-    A funding initiative with defined scope, eligibility, and rules.
-  </Accordion>
-  <Accordion title="Lightning round">
-    A time-limited window for submitting claims to a bounty.
+  <Accordion title="KYC">
+    Identity verification, required before you can withdraw funds. Powered by Didit.
   </Accordion>
   <Accordion title="Milestone">
-    A defined deliverable that, when approved, triggers a release of funds (grants or crowdfunding).
+    A defined deliverable that, once approved, releases a portion of escrowed funds (grants and crowdfunding).
   </Accordion>
-  <Accordion title="Off-ramping">
-    Converting crypto (e.g., XLM) to fiat currency. **Upcoming feature** on Boundless. Withdrawing Stellar assets from the platform already requires KYC.
+  <Accordion title="Mode (bounty)">
+    A bounty's setup, combining an entry type (Open, Application light, or Application full) with a selection (single claim or competition). See [Bounty modes](/contributors/bounties/bounty-modes).
   </Accordion>
-  <Accordion title="Trustless Work">
-    The escrow infrastructure Boundless uses for secure, non-custodial, milestone-based payments on Stellar. See [trustlesswork.com](https://www.trustlesswork.com/).
+  <Accordion title="Opportunity">
+    A bounty, hackathon, or grant you can take part in. Crowdfunding items are called "projects" instead.
   </Accordion>
-  <Accordion title="Managed wallet / abstracted wallet">
-    Boundless holds your balance for you; you don't set up a seed phrase or external wallet. Your account has a balance the platform manages. Passkey sign-in is planned for the future.
+  <Accordion title="Single claim / Competition">
+    The two selections for bounties. In a **single claim**, one contributor is chosen to do the work. In a **competition**, several work in parallel and the best submission wins.
   </Accordion>
-  <Accordion title="Passkey (coming soon)">
-    A future way to sign in or approve actions using biometrics or a security key instead of (or in addition to) a password.
+  <Accordion title="Quorum / Threshold">
+    Crowdfunding voting rules. **Quorum** is the minimum number of votes before the result counts; **threshold** is the share of up-votes needed to pass.
   </Accordion>
-  <Accordion title="Spark">
-    The platform credit used only for bounties (e.g., spending to apply, earning by completing work).
+  <Accordion title="Reputation (track record)">
+    Your history of completed work and placements, shared across all four pillars. See [Reputation](/concepts/reputation).
   </Accordion>
-  <Accordion title="Reputation">
-    A score or history reflecting your outcomes and behavior on the platform.
+  <Accordion title="Settle / Settlement">
+    The moment escrow releases a payout to a wallet, usually within about a minute of the organizer's approval.
   </Accordion>
-  <Accordion title="Trustless">
-    Not relying on a single trusted party; rules are enforced by the protocol or system.
+  <Accordion title="Soroban">
+    Stellar's smart contract layer. Boundless's escrow runs on Soroban contracts.
   </Accordion>
-  <Accordion title="XLM">
-    Stellar Lumens, the native asset of the Stellar network used for payments and fees on Boundless.
+  <Accordion title="Trustline">
+    Permission for a Stellar account to hold a specific token, such as USDC. Required to receive USDC.
+  </Accordion>
+  <Accordion title="USDC">
+    A US-dollar stablecoin on Stellar. All payments on Boundless settle in USDC.
+  </Accordion>
+  <Accordion title="Wallet (Boundless vs external)">
+    A **Boundless wallet** is managed for you, you sign in and the platform signs on your action. An **external wallet** (such as Freighter) is self-custody, where you sign transactions yourself.
   </Accordion>
 </AccordionGroup>

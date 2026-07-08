@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 175" font-family="ui-sans-serif,system-ui,sans-serif" role="img" aria-label="Judges score submissions against weighted rubric criteria that add up to 100, deciding winners">
+  <defs><marker id="g" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#94a3b8"/></marker></defs>
+  <text x="120" y="30" fill="#64748b" font-size="12" font-weight="700" text-anchor="middle">Rubric (weights = 100)</text>
+  <g fill="#15803D">
+    <rect x="40" y="45" width="160" height="26" rx="6"/>
+    <rect x="40" y="78" width="160" height="26" rx="6"/>
+    <rect x="40" y="111" width="160" height="26" rx="6"/>
+  </g>
+  <g fill="#fff" font-size="11.5" text-anchor="start">
+    <text x="52" y="62">Impact, 40</text>
+    <text x="52" y="95">Execution, 35</text>
+    <text x="52" y="128">Originality, 25</text>
+  </g>
+  <rect x="290" y="62" width="150" height="58" rx="11" fill="#334155"/>
+  <text x="365" y="87" fill="#fff" font-size="13" font-weight="700" text-anchor="middle">Judges score</text>
+  <text x="365" y="106" fill="#cbd5e1" font-size="10.5" text-anchor="middle">each submission</text>
+  <rect x="520" y="62" width="150" height="58" rx="11" fill="#85d82c"/>
+  <text x="595" y="95" fill="#14320a" font-size="14" font-weight="700" text-anchor="middle">Winners</text>
+  <line x1="202" y1="91" x2="286" y2="91" stroke="#94a3b8" stroke-width="2" marker-end="url(#g)"/>
+  <line x1="442" y1="91" x2="516" y2="91" stroke="#94a3b8" stroke-width="2" marker-end="url(#g)"/>
+  <text x="365" y="150" fill="#64748b" font-size="10.5" text-anchor="middle">AI assist can summarize submissions, it never scores</text>
+</svg>

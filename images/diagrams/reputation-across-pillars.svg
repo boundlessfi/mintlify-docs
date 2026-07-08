@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" font-family="ui-sans-serif,system-ui,sans-serif" role="img" aria-label="One reputation shared across bounties, hackathons, grants, and crowdfunding">
+  <defs><marker id="c" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3z" fill="#94a3b8"/></marker></defs>
+  <circle cx="380" cy="105" r="52" fill="#15803D"/>
+  <text x="380" y="100" fill="#fff" font-size="14" font-weight="700" text-anchor="middle">One</text>
+  <text x="380" y="118" fill="#fff" font-size="14" font-weight="700" text-anchor="middle">reputation</text>
+  <g fill="#85d82c">
+    <rect x="60"  y="20"  width="150" height="46" rx="10"/>
+    <rect x="550" y="20"  width="150" height="46" rx="10"/>
+    <rect x="60"  y="144" width="150" height="46" rx="10"/>
+    <rect x="550" y="144" width="150" height="46" rx="10"/>
+  </g>
+  <g fill="#14320a" font-size="14" font-weight="700" text-anchor="middle">
+    <text x="135" y="48">Bounties</text>
+    <text x="625" y="48">Hackathons</text>
+    <text x="135" y="172">Grants</text>
+    <text x="625" y="172">Crowdfunding</text>
+  </g>
+  <g stroke="#94a3b8" stroke-width="2" fill="none">
+    <line x1="212" y1="49"  x2="332" y2="85"  marker-end="url(#c)"/>
+    <line x1="548" y1="49"  x2="428" y2="85"  marker-end="url(#c)"/>
+    <line x1="212" y1="161" x2="332" y2="125" marker-end="url(#c)"/>
+    <line x1="548" y1="161" x2="428" y2="125" marker-end="url(#c)"/>
+  </g>
+</svg>

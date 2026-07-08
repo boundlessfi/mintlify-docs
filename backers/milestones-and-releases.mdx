@@ -1,0 +1,39 @@
+---
+title: "Milestones and releases"
+description: "How crowdfunding milestones release funds on Boundless, and how each release amount is calculated."
+---
+
+Campaign milestones define what the creator will deliver, and funds are released from escrow one milestone at a time. This reduces risk for backers and keeps creators accountable.
+
+## How it works
+
+1. **Creator defines milestones** When [creating a campaign](/backers/create-a-campaign), the creator breaks the work into milestones (e.g., "Alpha release," "Documentation," "Mainnet launch").
+2. **Backers fund the campaign** Contributions go into escrow. See [Back a project](/backers/back-a-project).
+3. **Creator delivers** For each milestone, the creator submits evidence (e.g., a link, demo, or report).
+4. **Reviewer approves** A [delegated reviewer](/backers/vote-on-campaigns) checks the evidence and approves the milestone.
+5. **Release** The creator claims the milestone and that share of the funds is released.
+
+## How each release is calculated
+
+Crowdfunding uses **dynamic** release amounts. Each time a milestone is claimed, the amount released is the **funds remaining in escrow divided by the milestones remaining**. The last milestone takes whatever is left, so nothing is stranded.
+
+<Frame caption="Each claim releases the remaining escrow divided by the remaining milestones, recalculated every time.">
+  <img src="/images/diagrams/crowdfunding-milestone-math.svg" alt="Remaining escrow divided by remaining milestones gives each release amount" />
+</Frame>
+
+For example, with 4,200 USDC raised across 3 milestones, the first claim releases 4,200 ÷ 3 = 1,400 USDC.
+
+## For creators
+
+- Define clear, verifiable milestones so backers and validators can approve releases without ambiguity.
+- Deliver on time to maintain trust and unlock funds.
+
+## For backers
+
+- Review the milestone structure before backing so you know when and how funds are released.
+
+## Related
+
+- [Crowdfunding overview](/backers/overview)
+- [Creating campaigns](/backers/create-a-campaign)
+- [Community validation](/backers/vote-on-campaigns)

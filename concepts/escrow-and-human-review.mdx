@@ -1,0 +1,80 @@
+---
+title: "Escrow and human review"
+description: "How Boundless locks funds in on-chain escrow and releases them after a human review step, so both sides are protected."
+---
+
+> **TL;DR:** Money is locked in on-chain escrow up front. A person then reviews the work, an organizer, a panel, a reviewer, or a community vote, and only then does the escrow contract release the payout. On-chain mechanics meet human review.
+
+## What you'll learn
+
+- What escrow is and why Boundless uses it
+- How **fund → work → review → settle** works
+- What this means for you as a contributor, backer, or organizer
+- Where to go if something goes wrong
+
+---
+
+## What is escrow?
+
+Escrow is a secure holding place for money. On Boundless, escrow runs on **Boundless's own Soroban smart contracts on the Stellar network**: no single person or company can quietly move the funds. Only the actions defined in the contract (release on award, refund on cancel, partner top-up) can touch the balance.
+
+The flow is the same across every pillar:
+
+1. **Fund**: the payer (organizer, backer, or grant program) locks funds in USDC into escrow when the program is published.
+2. **Work**: you apply, submit, or ship your work.
+3. **Review**: a human decides the outcome: the organizer picks a winner, a panel scores submissions, a reviewer approves a milestone, or the community votes.
+4. **Settle**: once the review passes, the contract releases the payout to your wallet, usually within about a minute.
+
+<Frame caption="Funds sit in on-chain escrow until a human review step passes; only then does the contract release them.">
+  <img src="/images/diagrams/escrow-human-review.svg" alt="Locked in escrow, then human review, then released to wallet in USDC" />
+</Frame>
+
+You don't have to trust the other party to pay, and they don't have to pay before the work is done. The contract enforces what was agreed; the people decide what gets funded.
+
+---
+
+## How it works in each pillar
+
+**Bounty**
+The organizer locks the reward. You submit work. The organizer (or a panel) selects the winner. Escrow sends the reward to your wallet.
+
+**Hackathon**
+Prize funds are locked when the event is published. Judges score submissions. When the organizer selects winners, escrow pays out to each winner at once.
+
+**Grant**
+The grant program locks the budget. You deliver milestone 1; the program manager approves it. Escrow releases that milestone's amount to you. This repeats for each milestone.
+
+**Crowdfunding**
+Backers' contributions go into escrow. You (the creator) complete a milestone and submit proof. A delegated reviewer approves it, and that portion of the funds is released to you.
+
+---
+
+## Why a human review step?
+
+On-chain escrow guarantees the money is real and the payout is automatic once conditions are met. But deciding whether work is actually good, whether a submission wins, whether a milestone is complete, is a judgment call. Boundless keeps a person in that seat:
+
+- The contract enforces **what was decided** (who gets paid, how much, when).
+- People decide **what counts** (which work wins, which milestone is done).
+
+That's the balance: no "hope they pay," and no bot deciding whether your work is good enough.
+
+---
+
+## What if something goes wrong?
+
+If you disagree with a rejection or an outcome, you can raise a dispute and the evidence is reviewed. See [Disputes and moderation](/help/disputes-and-moderation).
+
+---
+
+## Next steps
+
+- [How Boundless works](/start-here/how-boundless-works)
+- [Tokens and wallets](/reference/tokens-and-wallets)
+- [Disputes and moderation](/help/disputes-and-moderation)
+
+---
+
+## Need help?
+
+- **Platform:** [Boundless](https://www.boundlessfi.xyz)
+- [Discord](https://discord.gg/cNabHsV7PN) · [Support](mailto:support@boundlessfi.xyz)

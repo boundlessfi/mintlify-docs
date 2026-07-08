@@ -8,7 +8,7 @@ This doc is for **participants, organizers, and normal users**, not developers. 
 
 **Voice (consistent everywhere):**
 
-- **Clear, not clever:** Say "You'll receive payment" not "Your wallet will be credited with the corresponding XLM amount."
+- **Clear, not clever:** Say "You'll receive payment" not "Your wallet will be credited with the corresponding USDC amount."
 - **Confident, not condescending:** Assume intelligence; explain complexity when it matters.
 - **Human, not robotic:** Use "you" and "your"; avoid passive voice.
 
@@ -77,10 +77,10 @@ Use these consistently:
 | Intent           | Mintlify component | Use for |
 |-----------------|--------------------|--------|
 | Success / done  | `<Check>`          | "Your bounty application was submitted!" |
-| Important / warning | `<Warning>`     | "Applications cost 1 Spark. Make sure you have at least one." |
+| Important / warning | `<Warning>`     | "Applications cost 1 Credit. Make sure you have at least one." |
 | Critical / security | `<Warning>`     | "Never share your password or account recovery details. Boundless support will never ask for them." |
-| Pro tip         | `<Tip>`            | "Apply during bounty windows; competition is often lower." |
-| Learn more / concept | `<Info>`       | "New to escrow? Read [How Trustless Escrow Works](/concepts/trustless-escrow-explained)." |
+| Pro tip         | `<Tip>`            | "Apply early; competition is often lower." |
+| Learn more / concept | `<Info>`       | "New to escrow? Read [Escrow and human review](/concepts/escrow-and-human-review)." |
 | Note            | `<Note>`           | Supplementary info, safe to skip. |
 
 Example:
@@ -91,7 +91,7 @@ Example:
 </Check>
 
 <Warning title="Important">
-  You'll spend 1 Spark when you apply. Check your balance first.
+  You'll spend 1 Credit when you apply. Check your balance first.
 </Warning>
 
 <Tip title="Pro tip">
@@ -99,7 +99,7 @@ Example:
 </Tip>
 
 <Info title="Learn more">
-  [Trustless escrow explained](/concepts/trustless-escrow-explained)
+  [Escrow and human review](/concepts/escrow-and-human-review)
 </Info>
 ```
 
@@ -107,21 +107,22 @@ Example:
 
 ## 5. Product alignment
 
-- **Bounty types:** Fixed price, competition, milestone-based (backend: `fixed_price`, `competition`, `milestone_based`).
-- **Bounty windows:** Upcoming, active, closed (time-limited claiming).
-- **Reputation tiers:** Newcomer (0–499), Contributor (500–1,999), Established (2,000–4,999), Expert (5,000–9,999), Legend (10,000+).
-- **Crowdfunding in the app:** Called **Projects**; URLs: `/projects`, `/projects/[slug]`, share link `boundlessfi.xyz/campaigns/{id}`.
+- **Currency:** All payments settle in **USDC** on Stellar. Balances show in USD. Never say XLM.
+- **Credits:** The platform currency, used **only for bounties** (to apply and submit). Never say "Spark" or "Power Cell".
+- **Bounty modes:** A mode is an **entry type** (Open, Application light, Application full) combined with a **selection** (single claim, competition). Backend: `entryType` (`OPEN`, `APPLICATION_LIGHT`, `APPLICATION_FULL`) and `claimType` (`SINGLE_CLAIM`, `COMPETITION`). A competition with more than one prize tier is "multiple winners". Do not say "Pick" or "Showdown".
+- **Crowdfunding in the app:** Called **Projects**; URLs: `/projects`, `/projects/[slug]`.
 - **Main site:** [www.boundlessfi.xyz](https://www.boundlessfi.xyz). Support: support@boundlessfi.xyz. Discord: https://discord.gg/cNabHsV7PN.
-- **Wallets:** Boundless currently **abstracts wallets** (platform holds user balance; no seed phrase or external wallet). **Passkey** sign-in/signing is **planned for the future**; don't document it as current. Use "account and balance" or "managed wallet" for today.
-- **KYC:** Done via [Didit](https://didit.me/). **Withdrawing Stellar assets** from the platform **requires KYC** (withdraw to external wallet or, when available, off-ramp to fiat).
-- **Escrow:** Powered by [Trustless Work](https://www.trustlesswork.com/) (non-custodial, milestone-based escrow on Stellar).
-- **Upcoming features:** **Bounties**, **grants**, and **off-ramping** (XLM -> fiat) are upcoming. **Live today:** Hackathons, crowdfunding (Projects).
+- **Wallets:** A **Boundless wallet** is managed for the user (platform holds the balance; no seed phrase). An **external wallet** (e.g., Freighter) is self-custody. **Passkey** sign-in is **planned for the future**; don't document it as current.
+- **KYC:** Done via [Didit](https://didit.me/). **Withdrawing funds requires KYC** (withdraw to an external wallet, then convert on an exchange).
+- **Escrow:** Runs on **Boundless's own Soroban smart contracts** on Stellar. The framing is "on-chain mechanics meet human review", never "trustless".
+- **Cashing out:** Converting USDC to local currency is done on an **exchange**, not inside Boundless. Off-ramping is not a platform feature.
+- **Live today:** All four pillars are browsable; bounties have the fullest apply/submit flow. Some organizer and detail screens are still rolling out.
 
 ---
 
 ## 6. Links
 
-- **Internal:** Root-relative, no extension: `/getting-started/quick-start`.
+- **Internal:** Root-relative, no extension: `/start-here/create-your-account`.
 - **External:** Full URL; they open in a new tab.
 - **App links:** Use production when possible: `https://www.boundlessfi.xyz/projects`, etc.
 - **Platform backlinks:** Include links to the main platform ([Boundless](https://www.boundlessfi.xyz)) in "Need help" sections and where users would go to sign up, browse hackathons, or browse projects. Use `https://www.boundlessfi.xyz`, `https://www.boundlessfi.xyz/hackathons`, `https://www.boundlessfi.xyz/projects` as appropriate.
