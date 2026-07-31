@@ -8,6 +8,13 @@
     "dark": "#19825e"
   },
   "favicon": "/favicon.svg",
+  "seo": {
+    "metatags": {
+      "og:site_name": "Boundless Documentation",
+      "og:type": "website",
+      "twitter:site": "@boundless_fi"
+    }
+  },
   "navigation": {
     "tabs": [
       {
