@@ -36,6 +36,7 @@ These are placeholders good enough to ship. If the design team wants branded ver
 | A8 | start-here/verify-your-identity | ~2 min | The Didit KYC flow end to end; what to have ready; what "approved" unlocks | P1 |
 | B12 | contributors/get-paid/wallet-and-withdrawals | ~2 min | View balance/earnings/escrow, withdraw (KYC-gated), where funds land | P2 |
 | C3 | backers/back-a-project | ~90s | Browse a project, contribute USDC, track milestone releases | P2 |
+| F1 | reference/converting-usdc | ~2 min | JetPad demo. **Embedded**, hosted on Google Drive. Move to YouTube if Drive proves unreliable, and confirm sharing stays set to "anyone with the link" | Done |
 
 ---
 

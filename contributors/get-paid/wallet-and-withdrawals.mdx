@@ -28,12 +28,16 @@ Before you can withdraw your funds, you must meet the following requirements:
 1. **Complete KYC Verification:** Withdrawals require identity verification for regulatory compliance. Navigate to your settings and complete the identity verification process via [Didit](https://didit.me/). You cannot withdraw any funds until your KYC status is approved.
 2. **Have a Stellar Wallet:** You'll need an external Stellar wallet that supports USDC. Popular options include [Freighter](https://www.freighter.app/), [LOBSTR](https://lobstr.co/), or any other wallet compatible with the Stellar network. You can also withdraw to a centralized exchange that supports **USDC deposits specifically on the Stellar network**.
 3. **Activate the wallet and enable the USDC Trustline:**
-   - **Activation:** Your external wallet must hold a small minimum balance of **USDC** (Stellar Lumens) to be active.
+   - **Activation:** Your external wallet must hold a small minimum balance of **XLM** (Stellar Lumens) to be active.
    - **Trustline:** You must explicitly enable the "USDC" asset for your wallet (this is called "setting a trustline"). Please ensure you enable the official USDC asset issued by Circle, and not any similarly named assets from other issuers.
 
 <Info title="Heads up for exchange users">
   If you are withdrawing directly to an exchange that supports USDC on Stellar, their wallet usually already holds USDC and the trustline, so you don't need to set this manually. However, always double-check your exchange's specific deposit instructions.
 </Info>
+
+<Tip title="Not sure where to send it?">
+  If your goal is to end up with local currency in your bank account, see [Converting USDC to local currency](/reference/converting-usdc).
+</Tip>
 
 ---
 
@@ -57,7 +61,7 @@ Before you can withdraw your funds, you must meet the following requirements:
 <Warning title="Important">
   Boundless is not responsible for funds lost due to incorrect addresses, incompatible wallets, or exchange policies (such as minimum deposit limits). By requesting a withdrawal, you acknowledge that you have verified the destination details.
   
-  **Note on Memos:** The Boundless withdrawal flow does **not** support memos. Please ensure your destination address does not require a memo to receive funds.
+  **Note on memos:** Many exchanges use one shared deposit address for every customer and rely on a memo to tell whose deposit is whose. Boundless supports memos. When you enter a destination address, we check it and tell you if a memo is required, and if it is, you cannot submit the withdrawal without one. Always use the exact memo your exchange gives you.
 </Warning>
 
 ---
