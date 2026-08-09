@@ -1,25 +1,77 @@
 ---
 title: "Converting USDC to local currency"
-description: "How to turn your USDC earnings into local currency using an exchange."
+description: "How to turn your USDC earnings into local currency."
 ---
 
-> **TL;DR:** Boundless pays you in USDC. Converting USDC to your local currency happens through a cryptocurrency exchange, not inside Boundless.
+> **TL;DR:** Boundless pays you in USDC on Stellar. Converting it to your local currency happens in a separate app, not inside Boundless.
 
 ## How it works
 
-Boundless does not convert crypto to local currency itself. To cash out:
+Boundless does not convert crypto to local currency. Cashing out is three steps:
 
-1. Complete [identity verification](/start-here/verify-your-identity), withdrawals are gated by KYC.
-2. Withdraw your USDC from your [Boundless wallet](/concepts/wallet-and-balance) to a wallet or address you control.
-3. Use a cryptocurrency exchange that supports **USDC on Stellar** and serves your country to convert it to local currency and withdraw to your bank.
+1. **Verify your identity.** [Identity verification](/start-here/verify-your-identity) is required before you can withdraw.
+2. **Withdraw your USDC** from your [Boundless wallet](/concepts/wallet-and-balance) to an address you control.
+3. **Convert to local currency** in an app that accepts USDC on Stellar, then withdraw to your bank account or mobile money.
 
-## Before you cash out
+<Note>
+  You will verify your identity twice: once with Boundless so you can withdraw, and again with whichever app you use to convert. They are separate companies, so they each do their own checks.
+</Note>
 
-- Check [supported countries](/reference/supported-countries), availability of verification and payouts depends on your region.
-- Make sure the exchange you choose supports USDC on the Stellar network specifically, and note any fees it charges, those are set by the exchange, not by Boundless.
+## One option: JetPad
+
+You can use any app that accepts USDC on Stellar and works in your country. If you are not sure where to start, [JetPad](https://jetpad.finance/) is one worth looking at.
+
+It is a mobile app for iOS and Android, built on Stellar and backed by the Stellar Community Fund. You sign up with an email address, so there is no seed phrase to look after. It holds Stellar USDC, converts to local currency, and pays out to a bank account or mobile money across a growing list of African countries. It can also pay bills like airtime and electricity straight from your balance.
+
+{/* MEDIA · F1 video: JetPad demo. Hosted on Google Drive; move to YouTube if the docs site needs it long term. */}
+
+<iframe
+  className="w-full aspect-video"
+  src="https://drive.google.com/file/d/1ayAHDGUtk8nouLctN8VxIPRchs-ccWfw/preview"
+  title="JetPad demo"
+  frameborder="0"
+  allow="autoplay"
+  allowfullscreen
+></iframe>
+
+Check the countries, fees and limits on [JetPad's own site](https://jetpad.finance/), since those are theirs and can change.
+
+<Info>
+  JetPad is a suggestion, not a requirement. Any exchange or wallet that supports **USDC on the Stellar network** and serves your country will work. If you cannot find one where you live, [contact support](/support/contact-us).
+</Info>
+
+## Before you send
+
+<Warning title="Check the network and the memo">
+  Two things cause almost every lost transfer:
+
+  - **The network.** Send USDC on Stellar to a Stellar address. Sending to an address for a different blockchain will lose your funds.
+  - **The memo.** Many apps use one shared deposit address for all users and rely on a memo to know the deposit is yours. Leaving it out can lose your funds.
+
+  When you paste a destination address, Boundless checks it and tells you if a memo is required. If it is, you cannot send without one.
+</Warning>
+
+<Tip title="Send a small amount first">
+  Using an app for the first time? Withdraw a small amount, confirm it arrives, then send the rest.
+</Tip>
+
+## What Boundless does and does not do
+
+**We do:** hold your USDC balance, let you withdraw it once you are verified, and check the destination address before you send.
+
+**We do not:** convert crypto to local currency, or take part in the conversion once your USDC leaves your Boundless wallet.
+
+Any app mentioned here is run by an independent company. Their fees, rates, verification requirements and country availability are theirs and can change at any time. Mentioning an app is not a recommendation or a guarantee, and we cannot resolve issues that happen inside another company's app. You are responsible for any tax owed on converting crypto in your country.
 
 ## Next steps
 
 - [Your wallet and withdrawals](/contributors/get-paid/wallet-and-withdrawals)
-- [Tokens and wallets](/reference/tokens-and-wallets)
+- [Verify your identity](/start-here/verify-your-identity)
 - [Supported countries](/reference/supported-countries)
+- [Tokens and wallets](/reference/tokens-and-wallets)
+
+## Need help?
+
+- [Contact support](/support/contact-us)
+- [Discord](https://discord.gg/cNabHsV7PN)
+- [Boundless](https://www.boundlessfi.xyz)
